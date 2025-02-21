@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pesquisa.css">
+    <title>TechStay - Cadastro de Cliente</title>
+</head>
+<body>
+    <header><h1>TECHSTAY</h1></header>
+    <H2>Pesquisa de Satisfação</H2>
+    <form id="cadastro" action="cadastro.html">
+        <!--Addicionar atributo "required"-->
+        <label for="nome">Insira seu nome (opcional):</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="nota">De 0 a 10, qual nota você daria a sua experiência:</label><br>
+        <input type="range" min="1" max="10" id="nota" name="nota" step="1" value="10" required><br><br>
+
+        <label for="come">Deixe um comentário sobre sua experiência (min 20 caracteres):</label><br>
+        <textarea name="come" id="come" placeholder="Minha experiência foi..." minlength="20" required></textarea><br><br>
+
+        <label for="enviar">Clique aqui para finalizar a avaliação:</label><br>
+        <input type="submit" id="enviar" name="enviar">
+    </form>
+</body>
+</html>

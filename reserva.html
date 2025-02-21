@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reserva.css">
     <title>TechStay - Cadastro de Cliente</title>
 </head>
 <body>
-    <h1>TECHSTAY</h1>
+    <header><h1>TECHSTAY</h1></header>
     <H2>Reserva</H2>
-    <form id="cadastro" action="cadastro.html">
+    <form id="cadastro" action="pesquisa.html">
         <!--Addicionar atributo "required"-->
         <label for="res">Insira a data da reserva:</label><br>
-        <input type="date" id="res" name="res"><br><br>
+        <input type="date" id="res" name="res" required><br><br>
 
         <label for="horaIn">Horario de início do evento:</label><br>
         <input type="time" id="horaIn" name="horaIn" required><br><br>
@@ -23,12 +23,16 @@
         <label for="horaTr">Horario de termino do evento:</label><br>
         <input type="time" id="horaTr" name="horaTr" required><br><br>
 
-        <input type="radio" id="reunião" name="tipo" value="reunião" class="select">
+        <p>Selecione o tipo de evento:</p>
+        <input type="radio" id="reunião" name="tipo" value="reunião" class="select" required>
         <label for="reunião">Reunião</label><br>
         <input type="radio" id="treinamento" name="tipo" value="treinamento" class="select">
         <label for="treinamento">Treinamento</label><br>
         <input type="radio" id="individual" name="tipo" value="individual" class="select">
         <label for="individual">Individual</label><br><br>
+
+        <label for="qtd">Insira a quantidade de participantes:</label><br>
+        <input type="number" id="qtd" name="qtd" min="1"><br><br>
 
         <label for="enviar">Clique aqui para finalizar a reserva:</label><br>
         <input type="submit" id="enviar" name="enviar">

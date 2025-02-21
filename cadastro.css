@@ -39,12 +39,12 @@ input {
     padding: 10px;    
 }
 
-#termos {
-    width: auto;
-}
-
 label {
     color: white;
+}
+
+#termos {
+    width: auto;
 }
 
 input::placeholder {
@@ -60,11 +60,6 @@ input::placeholder {
     color: black;
     font-family: Poppins;
     font-weight: bold;
-}
-
-#enviar:hover{
-    background-color: white;
-    color: black;
 }
 
 #enviar:hover{
