@@ -15,7 +15,7 @@
     <form id="cadastro" action="pesquisa.html">
         <!--Addicionar atributo "required"-->
         <label for="res">Insira a data da reserva:</label><br>
-        <input type="date" id="res" name="res" required><br><br>
+        <input type="date" id="res" name="res" min="2025-02-21"required><br><br>
 
         <label for="horaIn">Horario de início do evento:</label><br>
         <input type="time" id="horaIn" name="horaIn" required><br><br>
@@ -32,7 +32,7 @@
         <label for="individual">Individual</label><br><br>
 
         <label for="qtd">Insira a quantidade de participantes:</label><br>
-        <input type="number" id="qtd" name="qtd" min="1"><br><br>
+        <input type="number" id="qtd" name="qtd" min="1" required><br><br>
 
         <label for="enviar">Clique aqui para finalizar a reserva:</label><br>
         <input type="submit" id="enviar" name="enviar">
