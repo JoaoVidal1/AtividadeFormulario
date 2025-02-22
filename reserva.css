@@ -43,8 +43,8 @@ input {
     padding: 10px;    
 }
 
-.select{
-    width: 10%;
+select {
+    width: 107%;
     background-color: rgba(0, 0, 0, 0.568);
     color: white;
 
@@ -54,7 +54,14 @@ input {
     border-radius: 15px;
     
     padding: 10px;    
-} 
+}
+
+option {
+    width: 107%;
+    background-color: black;
+    color: white;
+    padding: 10px;  
+}
 
 label {
     color: white;

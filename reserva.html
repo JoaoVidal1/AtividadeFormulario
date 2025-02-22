@@ -17,15 +17,14 @@
         <input type="datetime-local" id="res" name="res" min="2025-02-21" required><br><br>
 
         <label for="horaTr">Horario de termino do evento:</label><br>
-        <input type="time" id="horaTr" name="horaTr" placeholder="" required>
-
-        <p>Selecione o tipo de evento:</p>
-        <input type="radio" id="reunião" name="tipo" value="reunião" class="select" required>
-        <label for="reunião">Reunião</label><br>
-        <input type="radio" id="treinamento" name="tipo" value="treinamento" class="select">
-        <label for="treinamento">Treinamento</label><br>
-        <input type="radio" id="individual" name="tipo" value="individual" class="select">
-        <label for="individual">Individual</label><br><br>
+        <input type="time" id="horaTr" name="horaTr" placeholder="" required><br><br>
+   
+        <label for="evento">Selecione o tipo de evento:</label><br>
+        <select name="evento" id="evento" required>
+            <option value="reunião">Reunião</option>
+            <option value="treinamento">Treinamento</option>
+            <option value="individual">Individual</option>
+        </select><br><br>
 
         <input type="number" id="qtd" name="qtd" min="1" placeholder="Insira a quantidade de participantes:" required><br><br>
 
