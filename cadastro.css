@@ -14,15 +14,16 @@ html {
 }
 
 h1 {
-    margin-top: 0px;
     color: white;
     font-weight: bolder;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
 }
 
 h2 {
     color: white;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
@@ -59,9 +60,8 @@ input::placeholder {
     background-color: white;
     color: black;
     font-family: Poppins;
-    font-weight: bold;
 }
 
 #enviar:hover{
-    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.863);
+    box-shadow: 0px 0px 5px 5px rgba(110, 110, 110, 0.829);
 }
