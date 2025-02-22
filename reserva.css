@@ -2,7 +2,7 @@ body {
     background-image: url(https://images.unsplash.com/photo-1637055159652-2b8837731f00?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     font-family: Poppins;
-    font-size: medium;
+    font-size: large;
 }
 
 html {
@@ -14,15 +14,16 @@ html {
 }
 
 h1 {
-    margin-top: 0px;
     color: white;
     font-weight: bolder;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
 }
 
 h2 {
     color: white;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
@@ -43,7 +44,7 @@ input {
 }
 
 .select{
-    width: 50%;
+    width: 10%;
     background-color: rgba(0, 0, 0, 0.568);
     color: white;
 
@@ -61,7 +62,6 @@ label {
 
 input::placeholder {
     color: white;
-    font-weight: bold;
     opacity: 0.7;
 }
 
@@ -71,9 +71,8 @@ input::placeholder {
     background-color: white;
     color: black;
     font-family: Poppins;
-    font-weight: bold;
 }
 
 #enviar:hover{
-    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.863);
+    box-shadow: 0px 0px 5px 5px rgba(110, 110, 110, 0.829);
 }
